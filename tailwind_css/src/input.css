@@ -1,0 +1,44 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components; */
+@tailwind  utilities;
+.red{
+    color: cadetblue;
+    
+}
+@layer base {
+  .text-h1{
+    @apply text-4xl text-blue-400 text-center font-bold uppercase;
+  }
+  .flex-center{
+    @apply flex flex-col justify-between items-center gap-5 ;
+  }
+  .flexcenter1{
+    @apply flex justify-center items-center;
+  }
+}
+/* .dark input[type="date"] {
+    background-color: #333; 
+    color: #fff; 
+  }
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #fff; 
+}
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  @apply bg-transparent;
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM7 12h5v5H7z"/></svg>');
+  background-image: linear-gradient(transparent, transparent), 
+    linear-gradient(#fff, #fff);
+  background-position: center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: #333; /* Set background color to dark gray */
+  /* color: #fff;  */
+  /* Set text color to white */
+/* }  */ 
